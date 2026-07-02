@@ -1,0 +1,23 @@
+# Local python virtualenv
+.venv/
+__pycache__/
+*.py[cod]
+
+# Local configs and caches
+.env
+.pytest_cache/
+.coverage
+
+# Heavy artifact models or raw dataset storage
+trained_models/*.bin
+trained_models/*.pth
+trained_models/*.h5
+data/raw/*
+data/processed/*
+data/training/*
+
+# Ignore keeping .gitkeep from being hidden
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/training/.gitkeep
+!trained_models/.gitkeep
