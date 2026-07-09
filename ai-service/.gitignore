@@ -15,9 +15,11 @@ trained_models/*.h5
 data/raw/*
 data/processed/*
 data/training/*
+data/resumes/*
 
 # Ignore keeping .gitkeep from being hidden
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 !data/training/.gitkeep
+!data/resumes/.gitkeep
 !trained_models/.gitkeep

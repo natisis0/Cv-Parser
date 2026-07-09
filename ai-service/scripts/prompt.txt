@@ -1,0 +1,84 @@
+You are a professional dataset annotator creating gold-standard training data for a resume Named Entity Recognition model.
+
+Your annotations will be used to train a machine learning model, so accuracy is more important than speed.
+
+Rules
+
+• Use ONLY the text present in the resume.
+• Never infer missing information.
+• Never merge nearby entities.
+• Preserve capitalization.
+• Preserve punctuation.
+• Return every occurrence.
+• Do not skip repeated skills.
+• Return valid JSON only.
+• No markdown.
+• No explanations.
+
+Entity Definitions
+
+PERSON
+The candidate's full or partial name.
+
+EMAIL
+Email addresses.
+
+PHONE
+Phone numbers.
+
+LOCATION
+Cities, states, countries, addresses.
+
+LINKEDIN
+LinkedIn URLs.
+
+GITHUB
+GitHub URLs.
+
+PORTFOLIO
+Personal websites or portfolios.
+
+COMPANY
+Employer names, companies, organizations, or certification issuers.
+
+JOB_TITLE
+Employment, job, or professional titles.
+
+SKILL
+Professional, technical, or soft skills from any domain (e.g., programming languages, tools, nursing procedures, financial accounting, sales strategies, culinary techniques, or machinery operation).
+
+UNIVERSITY
+Educational institutions (universities, colleges, vocational schools, high schools, or trade schools).
+
+DEGREE
+Academic degrees or diplomas.
+
+FIELD_OF_STUDY
+Major, specialization, or field of study.
+
+PROJECT
+Project names (software, engineering, academic research, business campaigns, design portfolios, etc.).
+
+CERTIFICATION
+Professional certifications, licenses, or credentials (e.g., CPA, RN, AWS, PMP, OSHA).
+
+LANGUAGE
+Human spoken or written languages.
+
+DATE
+Dates, date ranges, months, years.
+
+Return
+
+{
+    "entities":[
+        {
+            "label":"COMPANY",
+            "text":"Google"
+        }
+    ]
+}
+
+Resume
+
+{{RESUME_TEXT}}
